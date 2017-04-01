@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang = "ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Наш магазин</title>
+  </head>
+    <body>
+      <header class = "inner-header">
+        <div class = "container">
+          <div class = "header-logo">
+            <a href = "barber_index.html">
+              <img src = "img/header-logo.png" alt = "Barbershop">
+            </a>
+          </div>
+          <nav class = "main-navigation">
+            <ul>
+              <li>
+                <a href = "#">Информация</a>
+              </li>
+              <li>
+                <a href = "#">Новости</a>
+              </li>
+              <li>
+                <a href = "barber_price.html">Прайс-лист</a>
+              </li>
+              <li>
+                <a class = "selected">Магазин</a>
+              </li>
+              <li>
+                <a href = "#">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="user-block">
+            <a href = "#" class = "login">Вход</a>
+          </div>
+        </div>
+      </header>
+
+      <main class = "container">
+        <h1 class = "page-title">Средства для ухода</h1>
+        <ul class = "breadcrumbs">
+          <li>
+            <a href = "barber_index.html">Главная</a>
+          </li>
+          <li>
+            <a href = "barber_shop.html">Магазин</a>
+          </li>
+          <li>
+            <span class = "current-page">Средства для ухода</span>
+          </li>
+        </ul>
+
+          <form class = "elements" method = "post" action = "">
+            <fieldset>
+              <legend>Производители:</legend>
+              <input type = "checkbox" name = "checkbox-1" id = "checkbox-1" checked>
+              <label for = "checkbox-1">Baxter of California</label>
+              <input type = "checkbox" name = "checkbox-2" id = "checkbox-2">
+              <label for = "checkbox-2">Mr. Natty</label>
+              <input type = "checkbox" name = "checkbox-3" id = "checkbox-3" checked>
+              <label for = "checkbox-3">Suavecito</label>
+              <input type = "checkbox" name = "checkbox-4" id = "checkbox-4">
+              <label for = "checkbox-4">Malin-Goetz</label>
+              <input type = "checkbox" name = "checkbox-5" id = "checkbox-5">
+              <label for = "checkbox-5">Murray's</label>
+              <input type = "checkbox" name = "checkbox-6" id = "checkbox-6" checked>
+              <label for = "checkbox-6">American crew</label>
+            </fieldset>
+            <fieldset>
+              <legend>Группы товаров:</legend>
+              <input type = "radio" name = "group" id = "radio-1" >
+              <label for = "radio-1">Бритвенные принадлежности</label>
+              <input type = "radio" name = "group" id = "radio-2" checked>
+              <label for = "radio-2">Средства для ухода</label>
+              <input type = "radio" name = "group" id = "radio-3">
+              <label for = "radio-3">Аксессуары</label>
+            </fieldset>
+          </form>
+      </main>
+    </body>
+  </html>
