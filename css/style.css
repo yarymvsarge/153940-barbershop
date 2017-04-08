@@ -1,0 +1,104 @@
+html, body {
+  min-width: 1122px;
+  min-height: 1750px;
+  margin: 0;
+  padding: 0;
+}
+
+.main-header {
+  margin-bottom: 60px;
+}
+
+.container {
+  width: 940px; /*Ширина содержимого (940 + 20 из падингов)*/
+  padding: 0 10px; /*Отступы справа и слева чтобы не прилипало содержимое*/
+  margin: 0 auto; /*Центруем содержимое */
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.main-navigation {
+  float: left;
+  width: 780px;
+
+  min-height: 70px; /*Минимальная высота из фотошопа для оформления сетки*/
+}
+
+.user-block {
+  float: right;
+  width: 140px;
+
+  min-height: 70px; /*Минимальная высота из фотошопа для оформления сетки*/
+}
+
+.index-logo {
+  width: 368px;
+  height: 204px;
+  margin-left: auto;
+  margin-right: auto;/*Центровка картинки*/
+  margin-bottom: 25px; /*Отступ между сеточными блоками*/
+}
+
+.features {
+  margin-bottom: 80px;
+}
+
+.features-item {
+  float: left;
+  margin-right: 20px;
+  width: 300px; /*ширина каждого преимущества из фотошопа*/
+
+  min-height: 175px; /*Минимальная высота из фотошопа для оформления сетки*/
+}
+
+.features-item:last-child {
+  margin-right: 0;
+}
+
+.index-content {
+  margin-bottom: 35px;
+  padding: 50px 80px;
+}
+
+.index-content-left {
+  float: left;
+  width: 380px;
+
+  min-height: 330px; /*Минимальная высота из фотошопа для оформления сетки*/
+}
+
+.index-content-right {
+  float: right;
+  width: 300px;
+
+  min-height: 330px; /*Минимальная высота из фотошопа для оформления сетки*/
+}
+
+.main-footer {
+  margin-top: 65px;
+  padding-top: 60px;
+  padding-bottom: 40px;
+}
+
+.footer-contacts {
+  float: left;
+  width: 320px;
+  min-height: 90px;
+  margin-right: 60px;
+}
+
+.footer-social {
+  float: left;
+  width: 180px;
+  min-height: 90px;
+}
+
+.footer-copyright {
+  float: right;
+  width: 140px;
+  min-height: 90px;
+}
