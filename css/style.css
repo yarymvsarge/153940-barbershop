@@ -1,6 +1,6 @@
 html, body {
-  min-width: 1122px;
-  min-height: 1750px;
+  min-width: 1200px;
+  min-height: 1175px;
   margin: 0;
   padding: 0;
 }
@@ -10,9 +10,9 @@ html, body {
 }
 
 .container {
-  width: 940px; /*Ширина содержимого (940 + 20 из падингов)*/
-  padding: 0 10px; /*Отступы справа и слева чтобы не прилипало содержимое*/
-  margin: 0 auto; /*Центруем содержимое */
+  width: 940px;
+  padding: 0 10px;
+  margin: 0 auto;
 }
 
 .clearfix::after {
@@ -25,22 +25,41 @@ html, body {
   float: left;
   width: 780px;
 
-  min-height: 70px; /*Минимальная высота из фотошопа для оформления сетки*/
+  min-height: 70px;
 }
+
 
 .user-block {
   float: right;
   width: 140px;
 
-  min-height: 70px; /*Минимальная высота из фотошопа для оформления сетки*/
+  min-height: 70px;
 }
+
+/*НАЧАЛО ДОПОЛНЕНИЯ ДЛЯ ВНУТРЕННИХ СТРАНИЦ*/
+
+.inner-page .main-header {
+  margin-bottom: 55px;
+}
+
+
+.logo-inner {
+  display: block;
+  float: left;
+  width: 111px;
+  height: 20px;
+}
+
+/*КОНЕЦ ДОПОЛНЕНИЯ ДЛЯ ВНУТРЕННИХ СТРАНИЦ*/
+
+/* НАЧАЛО СТИЛИЗАЦИИ ОСНОВНОГО СОДЕРЖИМОГО ГЛАВНОЙ СТРАНИЦЫ*/
 
 .index-logo {
   width: 368px;
   height: 204px;
   margin-left: auto;
-  margin-right: auto;/*Центровка картинки*/
-  margin-bottom: 25px; /*Отступ между сеточными блоками*/
+  margin-right: auto;
+  margin-bottom: 25px;
 }
 
 .features {
@@ -50,9 +69,9 @@ html, body {
 .features-item {
   float: left;
   margin-right: 20px;
-  width: 300px; /*ширина каждого преимущества из фотошопа*/
+  width: 300px;
 
-  min-height: 175px; /*Минимальная высота из фотошопа для оформления сетки*/
+  min-height: 175px;
 }
 
 .features-item:last-child {
@@ -68,16 +87,75 @@ html, body {
   float: left;
   width: 380px;
 
-  min-height: 330px; /*Минимальная высота из фотошопа для оформления сетки*/
+  min-height: 330px;
 }
 
 .index-content-right {
   float: right;
   width: 300px;
 
-  min-height: 330px; /*Минимальная высота из фотошопа для оформления сетки*/
+  min-height: 330px;
 }
 
+/* КОНЕЦ СТИЛИЗАЦИИ ОСНОВНОГО СОДЕРЖИМОГО ГЛАВНОЙ СТРАНИЦЫ*/
+
+/* НАЧАЛО СТИЛИЗАЦИИ ОСНОВНОГО СОДЕРЖИМОГО КАТАЛОГА ТОВАРОВ*/
+
+.page-title {
+  min-height: 75px;
+  margin-bottom: 50px;
+}
+
+.shop-column-left {
+  float: left;
+  width: 200px;
+  margin-right: 30px;
+}
+
+.shop-column-right {
+  float: left;
+  margin: 0;
+  padding: 0;
+  padding-left: 10px;
+  width: 700px;
+}
+
+.good {
+  display: inline-block;
+  margin: 0;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  padding: 0;
+  width: 220px;
+  height: 286px;
+  list-style: none;
+}
+
+.good:nth-child(3n) {
+  margin-right: 0;
+}
+/* КОНЕЦ СТИЛИЗАЦИИ ОСНОВНОГО СОДЕРЖИМОГО КАТАЛОГА ТОВАРОВ*/
+/* НАЧАЛО СТИЛИЗАЦИИ ОСНОВНОГО СОДЕРЖИМОГО КОНКРЕТНОГО ТОВАРА*/
+.full-description {
+  padding: 5px 0;
+  padding-bottom: 10px;
+}
+
+.good-gallery {
+  float: left;
+  padding-right: 10px;
+  width: 460px;
+  min-height: 675px;
+}
+
+.description {
+  float: right;
+  width: 390px;
+  min-height: 675px;
+}
+/* КОНЕЦ СТИЛИЗАЦИИ ОСНОВНОГО СОДЕРЖИМОГО КОНКРЕТНОГО ТОВАРА*/
+
+/* НАЧАЛО СТИЛИЗАЦИИ ПОДВАЛА СТРАНИЦ */
 .main-footer {
   margin-top: 65px;
   padding-top: 60px;
@@ -101,4 +179,8 @@ html, body {
   float: right;
   width: 140px;
   min-height: 90px;
+}
+
+.inner-page .main-footer {
+  margin-top: 35px;
 }

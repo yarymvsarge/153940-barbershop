@@ -3,14 +3,14 @@
   <head>
     <meta charset="utf-8">
     <title>Наш магазин</title>
-    <link rel="stylesheet" href="css/shop.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
-    <body>
+    <body class="inner-page">
       <header class="main-header">
         <div class="container clearfix">
           <nav class="main-navigation">
             <a class="logo-inner" href="barber_index.html">
-              <img src="../img/mini-logo.png" alt="Barbershop">
+              <img src="img/mini-logo.png" alt="Barbershop">
             </a>
             <ul>
               <li>
@@ -36,133 +36,140 @@
         </div>
       </header>
       <main class="container clearfix">
-        <h1 class = "inner-title">Средства для ухода</h1>
-        <ul class = "breadcrumbs">
-          <li>
-            <a href = "barber_index.html">Главная</a>
-          </li>
-          <li>
-            <a href = "barber_shop.html">Магазин</a>
-          </li>
-          <li>
-            <span class = "current-page">Средства для ухода</span>
-          </li>
-        </ul>
-        <form class = "choose" method = "post" action = "">
-          <fieldset>
-            <legend>Производители:</legend>
-            <input type = "checkbox" name = "checkbox-1" id = "checkbox-1" checked>
-            <label for = "checkbox-1">Baxter of California</label>
-            <input type = "checkbox" name = "checkbox-2" id = "checkbox-2">
-            <label for = "checkbox-2">Mr. Natty</label>
-            <input type = "checkbox" name = "checkbox-3" id = "checkbox-3" checked>
-            <label for = "checkbox-3">Suavecito</label>
-            <input type = "checkbox" name = "checkbox-4" id = "checkbox-4">
-            <label for = "checkbox-4">Malin-Goetz</label>
-            <input type = "checkbox" name = "checkbox-5" id = "checkbox-5">
-            <label for = "checkbox-5">Murray's</label>
-            <input type = "checkbox" name = "checkbox-6" id = "checkbox-6" checked>
-            <label for = "checkbox-6">American crew</label>
-          </fieldset>
-          <fieldset>
-            <legend>Группы товаров:</legend>
-            <input type = "radio" name = "group" id = "radio-1" >
-            <label for = "radio-1">Бритвенные принадлежности</label>
-            <input type = "radio" name = "group" id = "radio-2" checked>
-            <label for = "radio-2">Средства для ухода</label>
-            <input type = "radio" name = "group" id = "radio-3">
-            <label for = "radio-3">Аксессуары</label>
-          </fieldset>
-          <button type = "submit" value = "Показать">Показать</button>
-        </form>
-        <ul class = "goods">
-          <li class = "good">
-            <a href="barber_item_1.html"><img src="img/good-1.png" alt="" width="220" height="165"></a>
-            <div class="short-description">
-              <a href="barber_item_1.html">
-                <span class="group">Набор для путешествий</span>
-                <span class="company">«Baxter of California»</span>
-              </a>
-            </div>
-            <div class="price-cart">
-              <span class="price">2 900 руб.</span>
-              <a class="btn" href="#">Купить</a>
-            </div>
-          </li>
-          <li class = "good">
-            <a href="#"><img src="img/good-2.png" alt="" width="220" height="165"></a>
-            <div class="short-description">
-              <a href="#">
-                <span class="group">Увлажняющий кондиционер</span>
-                <span class="company">«Baxter of California»</span>
-              </a>
-            </div>
-            <div class="price-cart">
-              <span class="price">750 руб.</span>
-              <a class="btn" href="#">Купить</a>
-            </div>
-          </li>
-          <li class = "good">
-            <a href="#"><img src="img/good-3.png" alt="" width="220" height="165"></a>
-            <div class="short-description">
-              <a href="#">
-                <span class="group">Гель для волос</span>
-                <span class="company">«Suavecito»</span>
-              </a>
-            </div>
-            <div class="price-cart">
-              <span class="price">290 руб.</span>
-              <a class="btn" href="#">Купить</a>
-            </div>
-          </li>
-          <li class = "good">
-            <a href="#"><img src="img/good-4.png" alt="" width="220" height="165"></a>
-            <div class="short-description">
-              <a href="#">
-                <span class="group">Глина для укладки волос</span>
-                <span class="company">«American crew»</span>
-              </a>
-            </div>
-            <div class="price-cart">
-              <span class="price">500 руб.</span>
-              <a class="btn" href="#">Купить</a>
-            </div>
-          </li>
-          <li class = "good">
-            <a href="#"><img src="img/good-5.png" alt="" width="220" height="165"></a>
-            <div class="short-description">
-              <a href="#">
-                <span class="group">Гель для волос</span>
-                <span class="company">«American crew»</span>
-              </a>
-            </div>
-            <div class="price-cart">
-              <span class="price">300 руб.</span>
-              <a class="btn" href="#">Купить</a>
-            </div>
-          </li>
-          <li class = "good">
-            <a href="#">
-              <img src="img/good-6.png" alt="" width="220" height="165">
-            </a>
-            <div class="short-description">
-              <a href="#">
-                <span class="group">Набор для бритья</span>
-                <span class="company">«Baxter of California»</span>
-              </a>
-            </div>
-            <div class="price-cart">
-              <span class="price">3 900 руб.</span>
-              <a class="btn" href="#">Купить</a>
-            </div>
-          </li>
-        </ul>
-        <div class="paginator">
-          <a class="btn" href="#1">1</a>
-          <a class="btn active">2</a>
-          <a class="btn" href="#3">3</a>
-          <a class="btn" href="#4">4</a>
+        <div class="page-title">
+          <h1 class = "inner-title">Средства для ухода</h1>
+          <ul class = "breadcrumbs">
+            <li>
+              <a href = "barber_index.html">Главная</a>
+            </li>
+            <li>
+              <a href = "barber_shop.html">Магазин</a>
+            </li>
+            <li>
+              <span class = "current-page">Средства для ухода</span>
+            </li>
+          </ul>
         </div>
+
+        <section class="shop-column-left">
+          <form class = "main-choose" method = "post" action = "">
+            <fieldset>
+              <legend>Производители:</legend>
+              <input type = "checkbox" name = "checkbox-1" id = "checkbox-1" checked>
+              <label for = "checkbox-1">Baxter of California</label>
+              <input type = "checkbox" name = "checkbox-2" id = "checkbox-2">
+              <label for = "checkbox-2">Mr. Natty</label>
+              <input type = "checkbox" name = "checkbox-3" id = "checkbox-3" checked>
+              <label for = "checkbox-3">Suavecito</label>
+              <input type = "checkbox" name = "checkbox-4" id = "checkbox-4">
+              <label for = "checkbox-4">Malin-Goetz</label>
+              <input type = "checkbox" name = "checkbox-5" id = "checkbox-5">
+              <label for = "checkbox-5">Murray's</label>
+              <input type = "checkbox" name = "checkbox-6" id = "checkbox-6" checked>
+              <label for = "checkbox-6">American crew</label>
+            </fieldset>
+            <fieldset>
+              <legend>Группы товаров:</legend>
+              <input type = "radio" name = "group" id = "radio-1" >
+              <label for = "radio-1">Бритвенные принадлежности</label>
+              <input type = "radio" name = "group" id = "radio-2" checked>
+              <label for = "radio-2">Средства для ухода</label>
+              <input type = "radio" name = "group" id = "radio-3">
+              <label for = "radio-3">Аксессуары</label>
+            </fieldset>
+            <button type = "submit" value = "Показать">Показать</button>
+          </form>
+        </section>
+        <section class="shop-column-right">
+          <ul class = "main-goods">
+            <li class = "good">
+              <a href="barber_item_1.html"><img src="img/good-1.png" alt="" width="220" height="165"></a>
+              <div class="short-description">
+                <a href="barber_item_1.html">
+                  <span class="group">Набор для путешествий</span>
+                  <span class="company">«Baxter of California»</span>
+                </a>
+              </div>
+              <div class="price-cart">
+                <span class="price">2 900 руб.</span>
+                <a class="btn" href="#">Купить</a>
+              </div>
+            </li>
+            <li class = "good">
+              <a href="#"><img src="img/good-2.png" alt="" width="220" height="165"></a>
+              <div class="short-description">
+                <a href="#">
+                  <span class="group">Увлажняющий кондиционер</span>
+                  <span class="company">«Baxter of California»</span>
+                </a>
+              </div>
+              <div class="price-cart">
+                <span class="price">750 руб.</span>
+                <a class="btn" href="#">Купить</a>
+              </div>
+            </li>
+            <li class = "good">
+              <a href="#"><img src="img/good-3.png" alt="" width="220" height="165"></a>
+              <div class="short-description">
+                <a href="#">
+                  <span class="group">Гель для волос</span>
+                  <span class="company">«Suavecito»</span>
+                </a>
+              </div>
+              <div class="price-cart">
+                <span class="price">290 руб.</span>
+                <a class="btn" href="#">Купить</a>
+              </div>
+            </li>
+            <li class = "good">
+              <a href="#"><img src="img/good-4.png" alt="" width="220" height="165"></a>
+              <div class="short-description">
+                <a href="#">
+                  <span class="group">Глина для укладки волос</span>
+                  <span class="company">«American crew»</span>
+                </a>
+              </div>
+              <div class="price-cart">
+                <span class="price">500 руб.</span>
+                <a class="btn" href="#">Купить</a>
+              </div>
+            </li>
+            <li class = "good">
+              <a href="#"><img src="img/good-5.png" alt="" width="220" height="165"></a>
+              <div class="short-description">
+                <a href="#">
+                  <span class="group">Гель для волос</span>
+                  <span class="company">«American crew»</span>
+                </a>
+              </div>
+              <div class="price-cart">
+                <span class="price">300 руб.</span>
+                <a class="btn" href="#">Купить</a>
+              </div>
+            </li>
+            <li class = "good">
+              <a href="#">
+                <img src="img/good-6.png" alt="" width="220" height="165">
+              </a>
+              <div class="short-description">
+                <a href="#">
+                  <span class="group">Набор для бритья</span>
+                  <span class="company">«Baxter of California»</span>
+                </a>
+              </div>
+              <div class="price-cart">
+                <span class="price">3 900 руб.</span>
+                <a class="btn" href="#">Купить</a>
+              </div>
+            </li>
+          </ul>
+          <div class="paginator">
+            <a class="btn" href="#1">1</a>
+            <a class="btn active">2</a>
+            <a class="btn" href="#3">3</a>
+            <a class="btn" href="#4">4</a>
+          </div>
+        </section>
       </main>
       <footer class="main-footer">
         <div class="container clearfix">
